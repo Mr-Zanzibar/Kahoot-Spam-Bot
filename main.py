@@ -12,7 +12,7 @@ bot = client()
 def kahoot_join(pin, name):
 	print(f'Started Job On Process {current_process().pid}')
 	while True:
-		name = name + ''.join(random.SystemRandom().choice(string.ascii_letters + string.digits) for _ in range(10))
+		name = name + 'Mr-Cuda BOT'.join(random.SystemRandom().choice(string.ascii_letters + string.digits) for _ in range(10))
 		bot.join(pin, name)
 
 def main():
